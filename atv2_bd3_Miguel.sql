@@ -5,7 +5,7 @@ use atv2_bd3_miguel;
 
 create table tbl_alunos(
 cod_aluno int unsigned auto_increment primary key,
-#cod_turma int / fk
+cod_turma int,
 nome varchar(100),
 cpf varchar(11),
 rg varchar(9),
@@ -23,13 +23,13 @@ nome varchar(100)
 
 create table tbl_disciplinas(
 cod_disciplinas int unsigned auto_increment primary key,
-#cod_turma int / fk
+cod_turma int,
 sigla varchar(50)
 );
 
 create table tbl_frequencia(
-#cod_aluno int / fk
-#cod_disciplinas int / fk
+cod_aluno int,
+cod_disciplinas int,
 data_chamada timestamp,
 frequencia decimal(2,2)
 );
