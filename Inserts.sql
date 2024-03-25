@@ -6,7 +6,7 @@ insert into tbl_turma (cod_turma, nome, sigla)
 values (2, 'medio', 'B');
 
 #Alunos
-INSERT INTO tbl_aluno (cod_aluno, cod_turma, nome, cpf, rg, telefone_aluno, telefone_responsavel, email, data_nascimento)
+insert into tbl_alunos (cod_aluno, cod_turma, nome, cpf, rg, telefone_aluno, telefone_responsavel, email, data_nascimento)
 VALUES (1, 1, "Aluno 1", "83168016511", "672006612", "11958741551", "11988741334", "aluno1@gmail.com", "952908885"),
 (2, 1, "Aluno 2", "95499397022", "134139349", "11923456789", "11988741444", "josivaldo01@gmail.com", "152903997"),
 (3, 1, "Aluno 3", "98730507333", "950809946", "119786947654", "11988741596", "josivaldo02@gmail.com", "922903997"),
@@ -19,6 +19,6 @@ VALUES (1, 1, "Aluno 1", "83168016511", "672006612", "11958741551", "11988741334
 (10, 2, "Aluno 10", "19843300410", "843873012", "11958741231", "11966758333", "linux@gmail.com", "662903991");
 
 #Disciplina
-insert into tbl_disciplina ( cod_disciplina, cod_turma, sigla)
+insert into tbl_disciplinas ( cod_disciplina, cod_turma, sigla)
 values (1, 1, "PT"), (2, 1, "MT"), (3, 1, "ART"), (4, 1, "HIS"),
 		(1, 2, "PT"), (2, 2, "MT"), (3, 2, "ART"), (4, 2, "HIS");
